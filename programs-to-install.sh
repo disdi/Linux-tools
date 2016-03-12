@@ -1,11 +1,17 @@
 
 #!/bin/bash
 
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
+
 sudo apt update
 
 sudo apt upgrade -y
 
 sudo apt dist-upgrade -y
+
+sudo apt full-upgrade -y
+
+sudo apt install -y grub-customizer
 
 sudo apt install -y gksu pv ffmpeg libtcmalloc-minimal4 python-gpgme
 
@@ -30,6 +36,8 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt dist-upgrade -y
+
+sudo apt full-upgrade -y
 
 
 
