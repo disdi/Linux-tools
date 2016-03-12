@@ -1,7 +1,9 @@
 
 #!/bin/bash
 
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+
+sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 
 sudo apt update
 
@@ -10,6 +12,8 @@ sudo apt upgrade -y
 sudo apt dist-upgrade -y
 
 sudo apt full-upgrade -y
+
+sudo apt install -y notepadqq
 
 sudo apt install -y grub-customizer
 
