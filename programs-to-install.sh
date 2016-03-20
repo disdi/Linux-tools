@@ -19,6 +19,8 @@ sudo apt install -y grub-customizer
 
 sudo apt install -y gksu pv ffmpeg libtcmalloc-minimal4 python-gpgme
 
+sudo apt install -y libdvd-pkg
+
 sudo apt install -y gparted thunar youtube-dl gedit
 
 sudo apt install -y openjdk-8-jre psensor
