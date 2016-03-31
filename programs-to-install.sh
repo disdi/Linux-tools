@@ -27,6 +27,8 @@ sudo apt install -y gparted thunar youtube-dl gedit
 
 sudo apt install -y screenfetch
 
+sudo apt install -y cowsay fortune-mod
+
 sudo apt install -y openjdk-8-jre psensor
 
 sudo apt install -y vlc
