@@ -43,7 +43,11 @@ sudo apt install -y youtube-dl
 
 sudo apt install -y gedit
 
-sudo apt install -y cowsay fortune-mod
+sudo apt install -y cmatrix
+
+sudo apt install -y cowsay 
+
+sudo apt install -y fortune-mod
 
 sudo apt install -y openjdk-8-jre 
 
