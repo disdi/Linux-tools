@@ -23,9 +23,13 @@ sudo apt install -y pv
 
 sudo apt install -y notepadqq
 
-sudo apt install -y grub-customizer
+sudo apt install -y grub-customizer 
 
-sudo apt install -y ffmpeg 
+sudo apt install -y gnome-system-monitor
+
+sudo apt install -y ffmpeg  
+
+sudo apt install -y openssh-server
 
 sudo apt install -y python-gpgme
 
