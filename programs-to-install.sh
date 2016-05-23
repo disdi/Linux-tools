@@ -39,6 +39,8 @@ sudo apt install -y gparted
 
 sudo apt install -y thunar 
 
+sudo apt install -y nautilus
+
 sudo apt install -y youtube-dl 
 
 sudo apt install -y gedit
