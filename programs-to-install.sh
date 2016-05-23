@@ -59,8 +59,6 @@ sudo apt install -y openjdk-8-jre
 
 sudo apt install -y psensor
 
-sudo apt install -y libdvd-pkg
-
 sudo apt install -y gimp
 
 sudo apt install -y software-center
@@ -74,6 +72,8 @@ sudo apt install -y wine
 sudo apt install -y playonlinux
 
 sudo update-ca-certificates -f
+
+sudo apt install -y libdvd-pkg
 
 sudo apt install -y steam
 
