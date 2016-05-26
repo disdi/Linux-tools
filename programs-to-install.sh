@@ -89,5 +89,5 @@ sudo apt dist-upgrade -y
 
 sudo apt full-upgrade -y
 
-
+sudo rm -R /var/log
 
