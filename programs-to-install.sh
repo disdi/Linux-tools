@@ -65,11 +65,13 @@ sudo apt install -y openjdk-8-jre
 
 sudo apt install -y psensor
 
-sudo apt install -y gimp
+sudo apt install -y synaptic
 
 sudo apt install -y software-center
 
 sudo apt install -y ubuntu-sso-client-qt
+
+sudo apt install -y gimp
 
 sudo apt install -y libreoffice
 
@@ -92,4 +94,7 @@ sudo apt dist-upgrade -y
 sudo apt full-upgrade -y
 
 sudo rm -R /var/log
+
+
+
 
