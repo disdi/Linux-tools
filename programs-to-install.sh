@@ -45,6 +45,8 @@ sudo apt install -y thunar
 
 sudo apt install -y nautilus
 
+sudo apt install -y dconf-editor
+
 sudo apt install -y firefox
 
 sudo apt install -y chromium-browser
