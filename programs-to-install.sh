@@ -65,6 +65,8 @@ sudo apt install -y thunar
 
 sudo apt install -y nautilus
 
+sudo apt install -y pcmanfm
+
 sudo apt install -y gedit
 
 sudo apt install -y notepadqq
