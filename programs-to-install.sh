@@ -33,9 +33,17 @@ sudo apt install -y python-gpgme
 
 sudo apt install -y libtcmalloc-minimal4
 
-sudo apt install -y mono-complete mono-vbnc
+sudo apt install -y lib32z1 
+
+sudo apt install -y lib32ncurses5 
+
+sudo apt install -y lib32stdc++6
 
 sudo apt install -y libopenal1
+
+sudo apt install -y mono-complete 
+
+sudo apt install -y mono-vbnc
 
 sudo apt install -y cmatrix
 
