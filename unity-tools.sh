@@ -1,6 +1,10 @@
 
 #!/bin/bash
 
+echo 'I recommend you run "programs-to-install.sh" first!'
+
+sleep 2
+
 sudo add-apt-repository -y ppa:variety/next
 
 sudo apt update
