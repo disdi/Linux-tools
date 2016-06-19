@@ -1,4 +1,4 @@
-# linux-tools
+# Linux-tools
 
 A few Linux tools and useful scripts
 
