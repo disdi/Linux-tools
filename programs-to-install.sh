@@ -73,9 +73,11 @@ sudo apt install -y dconf-editor
 
 sudo apt install -y gnome-system-monitor 
 
+sudo apt install -y baobab 
+
 sudo apt install -y psensor 
 
-sudo apt install -y thunar 
+sudo apt install -y engrampa 
 
 sudo apt install -y nautilus 
 
