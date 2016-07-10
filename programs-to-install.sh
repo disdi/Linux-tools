@@ -87,6 +87,8 @@ sudo apt install -y gedit
 
 sudo apt install -y notepadqq 
 
+sudo apt install -y qbittorrent 
+
 sudo apt install -y firefox 
 
 sudo apt install -y chromium-browser 
