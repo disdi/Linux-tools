@@ -47,6 +47,8 @@ sudo apt install -y mono-complete
 
 sudo apt install -y mono-vbnc 
 
+sudo apt install -y exfat-* 
+
 sudo apt install -y smartmontools 
 
 sudo apt install -y stress 
