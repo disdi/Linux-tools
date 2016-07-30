@@ -43,6 +43,10 @@ sudo apt install -y libopenal1
 
 sudo apt install -y libgtk* 
 
+sudo apt install -y libsdl2* 
+
+sudo apt install -y liblua5* 
+
 sudo apt install -y mono-complete 
 
 sudo apt install -y mono-vbnc 
