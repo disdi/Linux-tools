@@ -5,6 +5,8 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq 
 
+sudo add-apt-repository -y ppa:webupd8team/java 
+
 sudo apt update 
 
 sudo apt upgrade -y 
