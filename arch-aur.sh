@@ -1,6 +1,23 @@
 
 #!/bin/bash 
 
+if [ "$(id -u)" == "0" ]; then
+    echo "This script cannot be run as root. Run it as a normal user. "
+    exit 1
+fi
+
+if ![ -f /usr/bin/sudo ]; then
+    echo "The sudo package is required, but the script can't be run with sudo. "
+    echo "Run \"su -c 'pacman -S sudo' && ./arch-aur.sh\". "
+    exit 2
+fi
+
+cd ~
+
+mkdir aur_temp
+
+cd aur_temp
+
 pacman -Syu --noconfirm 
 
 pacman -S --noconfirm sudo 
@@ -9,45 +26,55 @@ sudo pacman -Syu --noconfirm
 
 sudo pacman -S --noconfirm binutils 
 
+sudo pacman -S --noconfirm glib2 
+
 sudo pacman -S --noconfirm gcc 
+
+sudo pacman -S --noconfirm cmake 
+
+sudo pacman -S --noconfirm wget
 
 sudo pacman -S --noconfirm git 
 
-curl http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz -o pkgconfig.tgz
-
-tar -zxf pkgconfig.tgz 
-
-cd pkg-config-0.28 
-
-./configure 
-
-make install 
+sudo pacman -S --noconfirm base-devel 
 
 sudo git clone https://aur.archlinux.org/package-query.git 
 
 sudo chown -R $(whoami) package-query/ 
 
-sudo chmod -R 775 package-query 
+sudo chmod -R 7777 package-query/ 
 
 cd package-query 
 
-makepkg -si 
+makepkg -si --noconfirm
 
 cd .. 
 
 sudo git clone https://aur.archlinux.org/yaourt.git 
 
+sudo chown -R $(whoami) yaourt/ 
+
+sudo chmod 7777 -R yaourt/ 
+
 cd yaourt 
 
-sudo chown -R $(whoami) yaourt 
+makepkg -si --noconfirm
 
-sudo chmod 775 -R yaourt 
+cd ../.. 
 
-makepkg -si 
-
-cd .. 
+sudo rm -R aur_temp
 
 sudo pacman -Syu --noconfirm 
+
+echo " "
+echo "Please select option 3 "
+echo " "
+
+yaourt yaourt-gui
+
+echo " "
+echo "All done! "
+echo " "
 
 
 

@@ -29,7 +29,7 @@ sudo pacman -Rs --noconfirm xfce4-appfinder
 
 sudo pacman -S --noconfirm xfce4-whiskermenu-plugin 
 
-sudo pacman -S --noconfirm elementary 
+sudo pacman -S --noconfirm elementary-icon-theme
 
 sudo systemctl enable lightdm.service 
 

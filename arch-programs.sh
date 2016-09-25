@@ -15,9 +15,17 @@ sudo pacman -S --noconfirm gksu
 
 sudo pacman -S --noconfirm binutils 
 
+sudo pacman -S --noconfirm glib2 
+
 sudo pacman -S --noconfirm gcc 
 
+sudo pacman -S --noconfirm cmake 
+
+sudo pacman -S --noconfirm pkg-config 
+
 sudo pacman -S --noconfirm git 
+
+sudo pacman -S --noconfirm base-devel 
 
 sudo pacman -S --noconfirm pv 
 
