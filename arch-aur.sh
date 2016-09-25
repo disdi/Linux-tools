@@ -60,17 +60,17 @@ cd yaourt
 
 makepkg -si --noconfirm
 
+echo "NOCONFIRM=1" >> ~/.yaourtrc
+echo "BUILD_NOCONFIRM=1" >> ~/.yaourtrc
+echo "EDITFILES=0" >> ~/.yaourtrc
+
 cd ../.. 
 
 sudo rm -R aur_temp
 
 sudo pacman -Syu --noconfirm 
 
-echo " "
-echo "Please select option 3 "
-echo " "
-
-yaourt yaourt-gui
+yaourt -S yaourt-gui
 
 echo " "
 echo "All done! "

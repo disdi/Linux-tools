@@ -29,7 +29,23 @@ sudo pacman -S --noconfirm base-devel
 
 sudo pacman -S --noconfirm pv 
 
-sudo pacman -S --noconfirm icoutils 
+sudo pacman -S --noconfirm opendesktop-fonts 
+
+sudo pacman -S --noconfirm pavucontrol
+ 
+sudo pacman -S --noconfirm pulseaudio-alsa 
+
+sudo pacman -S --noconfirm libdvdread
+
+sudo pacman -S --noconfirm libdvdcss
+
+sudo pacman -S --noconfirm flac 
+
+sudo pacman -S --noconfirm lame 
+ 
+sudo pacman -S --noconfirm x264 
+
+sudo pacman -S --noconfirm libmpeg2 
 
 sudo pacman -S --noconfirm ffmpeg 
 
