@@ -25,6 +25,8 @@ sudo apt install -y pv
 
 sudo apt install -y icoutils 
 
+sudo apt install -y mediainfo 
+
 sudo apt install -y youtube-dl 
 
 sudo apt install -y ffmpeg 
