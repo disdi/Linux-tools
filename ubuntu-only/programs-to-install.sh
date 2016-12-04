@@ -61,6 +61,8 @@ sudo apt install -y aptitude
 
 sudo apt install -y smartmontools 
 
+sudo apt install -y gsmartcontrol 
+
 sudo apt install -y stress 
 
 sudo apt install -y cmatrix 
