@@ -10,15 +10,21 @@ esac
 
 # Checks if xfce4-panel is installed and if it's running. 
 # If it's both installed and not running, run it and exit. 
+# Also checks if xfdesktop is running to avoid starting 
+# when using a Terminal session or when using another DE. 
+
 if [ -f /usr/bin/xfce4-panel ]; then
-    if pgrep "xfce4-panel" > /dev/null
+    if pgrep "xfdesktop" > /dev/null
     then
-        echo "Yep" > /dev/null
-    else
-        sh -c "xfce4-panel &" &
-        sleep 2
-        clear
-        exit
+        if pgrep "xfce4-panel" > /dev/null
+        then
+            echo "Yep" > /dev/null
+        else
+            sh -c "xfce4-panel &" &
+            sleep 2
+            clear
+           exit
+        fi
     fi
 fi
 

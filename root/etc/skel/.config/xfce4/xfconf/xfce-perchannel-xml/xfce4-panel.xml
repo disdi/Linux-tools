@@ -19,8 +19,8 @@
         <value type="int" value="8"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
-      <property name="background-alpha" type="uint" value="20"/>
-      <property name="size" type="uint" value="48"/>
+      <property name="background-alpha" type="uint" value="80"/>
+      <property name="size" type="uint" value="36"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="span-monitors" type="bool" value="false"/>
       <property name="enter-opacity" type="uint" value="100"/>
@@ -69,21 +69,6 @@
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-format" type="string" value="%a, %Y-%b-%d, %I:%M %p"/>
       <property name="tooltip-format" type="string" value="%A, %eth of %B"/>
-    </property>
-    <property name="plugin-5" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14797752631.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14797752752.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-10" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14816309921.desktop"/>
-      </property>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>
