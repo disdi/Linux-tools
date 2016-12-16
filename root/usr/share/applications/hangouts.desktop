@@ -2,6 +2,6 @@
 Version=1.0
 Name=Hangouts
 Exec=/usr/bin/google-chrome-stable %U --app=https://hangouts.google.com
-Icon=/home/aaronfranke/Documents/Icons/hangouts.png
+Icon=/usr/share/icons/hangouts.png
 Type=Application
 Categories=Network;WebBrowser;Multimedia;

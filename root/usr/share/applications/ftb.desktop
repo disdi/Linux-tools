@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Minecraft
-Icon=/home/aaronfranke/Documents/Icons/ftb.png
+Icon=/usr/share/icons/ftb.png
 Exec=sh -c 'java -Xss2M -jar ~/.minecraft/FTB.jar'
 Categories=Game;
 Name[en_US]=Minecraft FTB
