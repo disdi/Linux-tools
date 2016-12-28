@@ -7,7 +7,9 @@ sudo swapon -a
 
 sudo swapon -a 
 
-
+echo " " 
+echo "Swap has been emptied! " 
+echo " " 
 
 
 
