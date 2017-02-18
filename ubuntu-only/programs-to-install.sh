@@ -39,6 +39,8 @@ sudo apt install -y libsdl2*
 
 sudo apt install -y liblua5* 
 
+sudo apt install -y libcap2-bin 
+
 sudo apt install -y vulkan-utils 
 
 sudo apt install -y python-gpgme 
@@ -128,6 +130,10 @@ sudo apt install -y wine
 sudo apt install -y playonlinux 
 
 sudo update-ca-certificates -f 
+
+sudo setcap cap_sys_ptrace=eip /usr/bin/wineserver 
+
+sudo setcap cap_sys_ptrace=eip /usr/bin/wine-preloader 
 
 sudo apt install -y libdvd-pkg 
 
