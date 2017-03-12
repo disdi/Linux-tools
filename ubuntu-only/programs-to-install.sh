@@ -7,6 +7,8 @@ sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 
 sudo add-apt-repository -y ppa:webupd8team/java 
 
+sudo add-apt-repository -y ppa:wine/wine-builds 
+
 sudo apt update 
 
 sudo apt upgrade -y 
@@ -129,7 +131,7 @@ sudo apt install -y gimp
 
 sudo apt install -y libreoffice 
 
-sudo apt install -y wine 
+sudo apt install -y winehq-devel 
 
 sudo apt install -y playonlinux 
 
