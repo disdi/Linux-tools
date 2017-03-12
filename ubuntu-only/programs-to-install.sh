@@ -25,6 +25,10 @@ sudo apt install -y openssh-server
 
 sudo apt install -y libtcmalloc-minimal4 
 
+sudo apt install -y libdbusmenu-gtk4 
+
+sudo apt install -y libdbusmenu-gtk4:i386 
+
 sudo apt install -y lib32z1 
 
 sudo apt install -y lib32ncurses5 
