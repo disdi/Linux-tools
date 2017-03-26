@@ -63,6 +63,8 @@ sudo apt install -y lame
 
 sudo apt install -y cmake 
 
+sudo apt install -y build-essential 
+
 sudo apt install -y exfat-* 
 
 sudo apt install -y git 
