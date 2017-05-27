@@ -1,6 +1,14 @@
 
 #!/bin/bash 
 
+sudo dpkg --add-architecture i386 
+
+wget https://dl.winehq.org/wine-builds/Release.key 
+
+sudo apt-key add Release.key 
+
+sudo apt-add-repository -y https://dl.winehq.org/wine-builds/ubuntu/ 
+
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer 
 
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq 
@@ -133,7 +141,7 @@ sudo apt install -y gimp
 
 sudo apt install -y libreoffice 
 
-sudo apt install -y winehq-devel 
+sudo apt install -y --install-recommends winehq-devel 
 
 sudo apt install -y playonlinux 
 
