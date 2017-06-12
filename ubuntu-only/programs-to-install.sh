@@ -7,6 +7,8 @@ wget https://dl.winehq.org/wine-builds/Release.key
 
 sudo apt-key add Release.key 
 
+sudo rm -f Release.key 
+
 sudo apt-add-repository -y https://dl.winehq.org/wine-builds/ubuntu/ 
 
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer 
