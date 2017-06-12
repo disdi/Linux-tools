@@ -17,7 +17,11 @@ sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 
 sudo add-apt-repository -y ppa:webupd8team/java 
 
-sudo add-apt-repository -y ppa:wine/wine-builds 
+curl https://dl.itch.ovh/archive.key | sudo apt-key add - 
+
+ITCHIO_DEB="deb https://dl.bintray.com/itchio/deb xenial main" 
+
+echo $ITCHIO_DEB | sudo tee /etc/apt/sources.list.d/itchio.list 
 
 sudo apt update 
 
@@ -26,6 +30,8 @@ sudo apt upgrade -y
 sudo apt dist-upgrade -y 
 
 sudo apt full-upgrade -y 
+
+sudo apt install -y apt-transport-https 
 
 sudo apt install -y vlc 
 
@@ -156,6 +162,8 @@ sudo setcap cap_sys_ptrace=eip /usr/bin/wine-preloader
 sudo apt install -y libdvd-pkg 
 
 sudo apt install -y steam 
+
+sudo apt install -y itch 
 
 sudo apt update 
 
