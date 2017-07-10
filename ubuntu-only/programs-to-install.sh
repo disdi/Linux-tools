@@ -59,6 +59,8 @@ sudo apt install -y libgtk*
 
 sudo apt install -y libsdl2* 
 
+sudo apt install -y libsdl-ttf* 
+
 sudo apt install -y liblua5* 
 
 sudo apt install -y libcap2-bin 
