@@ -9,6 +9,12 @@ sudo apt-key add Release.key
 
 sudo rm -f Release.key 
 
+ver=$(lsb_release -sr); if [ $ver != "16.10" -a $ver != "17.04" -a $ver != "16.04" ]; then ver=16.04; fi 
+
+echo "deb http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list 
+
+wget -q http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/Release.key -O- | sudo apt-key add - 
+
 sudo apt-add-repository -y https://dl.winehq.org/wine-builds/ubuntu/ 
 
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer 
