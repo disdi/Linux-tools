@@ -15,6 +15,8 @@ echo "deb http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/
 
 wget -q http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/Release.key -O- | sudo apt-key add - 
 
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - 
+
 sudo apt-add-repository -y https://dl.winehq.org/wine-builds/ubuntu/ 
 
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer 
@@ -40,6 +42,8 @@ sudo apt full-upgrade -y
 sudo apt install -y apt-transport-https 
 
 sudo apt install -y vlc 
+
+sudo apt install -y nodejs 
 
 sudo apt install -y screenfetch 
 
