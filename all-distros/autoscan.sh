@@ -6,7 +6,7 @@
 PRINTER="hpaio:/net/OfficeJet_4650_series?ip=192.168.0.100"
 
 # Optional variables, feel free to adjust.
-TIME=30		# TIME (in seconds), should be at least 10.
+TIME=30   	# TIME (in seconds), should be at least 10.
 FORMAT=jpg	# FORMAT must be understood by mogrify. Ex: jpg, png, tiff, bmp.
 QUALITY=200	# QUALITY must be supported by your printer. Common ones are 300, 200, 150, and 75.
 
