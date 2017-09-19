@@ -14,11 +14,11 @@ QUALITY=200	# QUALITY must be supported by your printer. Common ones are 300, 20
 
 
 if [ ! -f /usr/bin/scanimage ]; then
-    echo "This script requires the `scanimage` command, which was not found. Exiting. "
+    echo "This script requires the \`scanimage\` command, which was not found. Exiting. "
     exit 1
 fi
 if [ ! -f /usr/bin/mogrify ]; then
-    echo "This script requires the `mogrify` command from the `imagemagick` package, which was not found. Exiting. "
+    echo "This script requires the \`mogrify\` command from the `imagemagick` package, which was not found. Exiting. "
     exit 2
 fi
 
