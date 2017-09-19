@@ -11,6 +11,17 @@ FORMAT=jpg	# FORMAT must be understood by mogrify. Ex: jpg, png, tiff, bmp.
 QUALITY=200	# QUALITY must be supported by your printer. Common ones are 300, 200, 150, and 75.
 
 
+
+
+if [ ! -f /usr/bin/scanimage ]; then
+    echo "This script requires the `scanimage` command, which was not found. Exiting. "
+    exit 1
+fi
+if [ ! -f /usr/bin/mogrify ]; then
+    echo "This script requires the `mogrify` command from the `imagemagick` package, which was not found. Exiting. "
+    exit 2
+fi
+
 echo " "
 echo "Computer will start automatically scanning in a few seconds... "
 SLTIME=$(($TIME-5))
