@@ -18,7 +18,7 @@ if [ ! -f /usr/bin/scanimage ]; then
     exit 1
 fi
 if [ ! -f /usr/bin/mogrify ]; then
-    echo "This script requires the \`mogrify\` command from the `imagemagick` package, which was not found. Exiting. "
+    echo "This script requires the \`mogrify\` command from the \`imagemagick\` package, which was not found. Exiting. "
     exit 2
 fi
 
