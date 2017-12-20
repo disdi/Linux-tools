@@ -47,6 +47,8 @@ sudo apt install -y nodejs
 
 sudo apt install -y screenfetch 
 
+sudo apt install -y htop 
+
 sudo apt install -y gksu 
 
 sudo apt install -y openssh-server 
