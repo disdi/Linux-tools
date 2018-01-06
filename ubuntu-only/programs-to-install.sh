@@ -3,6 +3,14 @@
 
 sudo dpkg --add-architecture i386 
 
+sudo apt update 
+
+sudo apt upgrade -y 
+
+sudo apt dist-upgrade -y 
+
+sudo apt full-upgrade -y 
+
 wget https://dl.winehq.org/wine-builds/Release.key 
 
 sudo apt-key add Release.key 
@@ -30,6 +38,12 @@ curl https://dl.itch.ovh/archive.key | sudo apt-key add -
 ITCHIO_DEB="deb https://dl.bintray.com/itchio/deb xenial main" 
 
 echo $ITCHIO_DEB | sudo tee /etc/apt/sources.list.d/itchio.list 
+
+wget -O discord.deb https://discordapp.com/api/download?platform=linux&format=deb
+
+sudo dpkg -i discord.deb
+
+sudo rm -f discord.deb
 
 sudo apt update 
 
