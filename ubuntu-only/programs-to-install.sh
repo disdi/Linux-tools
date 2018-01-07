@@ -39,7 +39,7 @@ ITCHIO_DEB="deb https://dl.bintray.com/itchio/deb xenial main"
 
 echo $ITCHIO_DEB | sudo tee /etc/apt/sources.list.d/itchio.list 
 
-wget -O discord.deb https://discordapp.com/api/download?platform=linux&format=deb
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 
 sudo dpkg -i discord.deb
 
